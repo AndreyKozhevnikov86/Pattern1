@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'io.freefair.lombok' version '5.3.0'
+    //id 'io.freefair.lombok' version '5.3.0'
 }
 
 group = 'ru.netology'
@@ -19,6 +19,8 @@ dependencies {
     testRuntimeOnly 'org.slf4j:slf4j-simple:1.7.30'
     testImplementation 'com.codeborne:selenide:6.17.1'
     testImplementation 'com.github.javafaker:javafaker:1.0.2'
+    testCompileOnly 'org.projectlombok:lombok:1.18.24'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
 }
 
 test {
